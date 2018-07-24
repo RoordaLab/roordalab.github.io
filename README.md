@@ -1,42 +1,92 @@
 
-# Consortium for Sharing Technology used in RetinAl Imaging and Tracking (C-STRAIT)
 
-C-STRAIT is group of labs who use scanning-laser opthalmoscopes to measure structure and function of human and animal visual systems. The mission of C-STRAIT is to share the technological innovations developed across the group.
 
-## Overview
-
-## Labs
-
-Consortium:
-
-1. [Austin Roorda](http://roorda.vision.berkeley.edu/), UC Berkeley.
-
-2. [Jacque Duncan](https://www.ucsfhealth.org/jacque.duncan), UC San Francisco.
-
-3. [David Arathorn](http://www.ece.montana.edu/directory/faculty/1831232/david-arathorn), Montana State University.
-
-4. [Susana Chung](http://selab.berkeley.edu/), UC Berkeley.
-
-5. [Ramkumar Sabesan](http://depts.washington.edu/sabaolab/), University of Washington.
-
-6. [Wolf Harmening](http://ao.ukbonn.de/), University of Bonn.
-
-7. [Stan Klein](https://vcresearch.berkeley.edu/faculty/stanley-klein), UC Berkeley.
-
-8. [William Tuten](https://optometry.berkeley.edu/people/william-tuten-phd/), UC Berkeley
-
-9. [Jessica Morgan](http://www.med.upenn.edu/apps/faculty/index.php/g327/p8207419), University of Pennsylvania.
+__Consortium for Retinal Imaging and Tracking Exeperiments__ (C-RITE) is group of [labs](#labs) who use scanning-laser opthalmoscopes (SLO) to measure structure and function of human and animal visual systems. The mission of C-RITE is to share the technological innovations developed across labs.
 
 ## Software 
 
-1. [AOMcontrol](https://github.com/RoordaLab/AOMcontrol): A MATLAB gui for controlling a tracking SLO. This software was developed in the lab of Austin Roorda at UC Berkeley. [Documentation](https://github.com/RoordaLab/AOMcontrol/wiki).
+### Overview
+
+| Name | Purpose | Primary development lab |
+| ---- |:------- | -----------------------:|
+| [AO auto montage](#ao-auto-montaging) | Image processing | Morgan & Brainard |
+| [AOMcontrol](#aomcontrol) | Data collection | Roorda |
+| [AOSACA](#aosaca) | AO specific tools | Roorda |
+| [AOVIS_toolbox](#aovis_toolbox) | Analysis tools | Roorda |
+| [AOVIS_projector](#aovis_projector) | Data collection | Roorda |
+| [ICANDI](#icandi) | Data collection | Roorda |
+| [IGUIDE](#iguide) | Data collection | Harmening |
+| [Light propogation model](#light-propogation-model) | Analysis tools | Sincich |
+| [Pupil Tracker](#pupil-tracker) | Data collection | Harmening |
+| [ReVAS](#revas) | Image Processing | Chung |
 
 
-2. ICANDI.
+### Data collection
 
-3. AOSACA.
+#### AOMcontrol
 
-4. [Pupil tracker](https://github.com/ukb-aoslo).
+* [Source code](https://github.com/RoordaLab/AOMcontrol)
+
+> A MATLAB gui for controlling a tracking SLO. This software is used for testing visual function. Users specify images and temporal sequences to be rendered through the SLO during an experiment. [Documentation](https://github.com/RoordaLab/AOMcontrol/wiki) of AOMcontrol's purpose and limitations is available.
+
+#### ICANDI
+
+> Image capture and delivery interface.
+
+#### IGUIDE
+
+* Source code currently unavailable. Contact Wolf Harmening for more information.
+
+> Description _coming soon_.
+
+#### Pupil tracker
+
+* [Source code](https://github.com/ukb-aoslo/PupilTracker). 
+
+> A stand alone program for pupil tracking during experimental data collection. This program does not require AOMcontrol to run. _See also [AOMcontrol Pupil tracker](https://github.com/RoordaLab/AOMcontrol/wiki/Pupil-tracker)_.
+
+#### AOVIS_projector
+
+* [Source code](https://github.com/RoordaLab/AOVIS_projector)
+
+> A Psychtoolbox based program for controlling an external projector.
+
+### Image processing
+
+#### AO Auto montaging
+
+* [Source code](https://github.com/BrainardLab/AOAutomontaging)
+
+> Software to process adaptive optics videos and stitch together a montage image. The software has been described in a published manuscript: 
+
+> [M. Chen, R. F. Cooper, G. K. Han, J. Gee, D. H. Brainard, and J. I. W. Morgan, "Multi-modal automatic montaging of adaptive optics retinal images," Biomedical Optics Express, Vol. 7 (12), pp. 4899-4918, 2016.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5175540/pdf/4899.pdf).
+
+#### [ReVAS](#ReVAS)
+
+* Source code coming soon.
+
+> An open-source tool for eye motion extraction from retinal videos obtained with scanning laser ophthalmoscopy.
+
+### Analysis tools
+
+#### AOVIS_toolbox
+
+* [Source code](https://github.com/RoordaLab/AOVIS_toolbox). 
+
+> A general purpose toolbox for collecting and analyzing retinally targeted psychophysical data. Routines include algorithms for generating cone targeted stimuli, collecting and analyzing color naming, delivery analysis and light capture modeling and converting SLO power readings (microWatts) into photons.
+
+#### Light propogation model
+
+* Source code coming soon.
+
+> _Developed by Zander Meadway in the Sincich Lab_
 
 
-## Publications
+### Adaptive Optics specific technology
+
+#### AOSACA
+
+> Wavefront sensing and deformable mirror control loop. 
+
+
+
