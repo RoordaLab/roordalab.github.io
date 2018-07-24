@@ -1,7 +1,7 @@
 
 
 
-__Consortium for Retinal Imaging and Tracking Exeperiments__ (C-RITE) is group of [labs](#labs) who use scanning-laser opthalmoscopes (SLO) to measure structure and function of human and animal visual systems. The mission of C-RITE is to share the technological innovations developed across labs.
+__Consortium for Retinal Imaging and Tracking Exeperiments__ (C-RITE) is group of [labs](/about/) who use scanning-laser opthalmoscopes (SLO) to measure structure and function of human and animal visual systems. The mission of C-RITE is to share the technological innovations developed across labs.
 
 ## Software 
 
