@@ -18,6 +18,7 @@ Below is a list of available software repositories organized by the primary purp
 | [AO auto montage](#ao-auto-montaging) | Image processing | Morgan & Brainard |
 | [AOMcontrol](#aomcontrol) | Data collection | Roorda |
 | [AOSACA](#aosaca) | AO specific tools | Roorda |
+| [AOStimulation](#aostimulation) | AO specific tools | Brainard & Morgan |
 | [AOVIS_toolbox](#aovis_toolbox) | Analysis tools | Roorda |
 | [AOVIS_projector](#aovis_projector) | Data collection | Roorda |
 | [ICANDI](#icandi) | Data collection | Roorda |
@@ -97,6 +98,13 @@ Below is a list of available software repositories organized by the primary purp
 * Source code coming soon. Contact Austin Roorda.
 
 > Wavefront sensing and deformable mirror control loop. 
+
+
+#### AOStimulation
+
+* [Source code](https://github.com/BrainardLab/AOStimulation)
+
+> A project to develop software/hardware to track the eye using the AO image and deliver targeted stimuli through the instrument. 
 
 
 ## Funding
